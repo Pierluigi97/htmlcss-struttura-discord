@@ -14,24 +14,17 @@ header{
     background-color: #add8e7;
 }
 
-footer{
-    padding: 20px;
-    height: 80px;
-    background-color: #23272a;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-}
-
-
 .container{
     justify-content: center;
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
 }
+
 .d-flex{
     display: flex;
 }
+
 .row{
     display: flex;
 }
@@ -39,38 +32,70 @@ footer{
     padding: 0 10px;
 }
 
+/*******  HEADER  *******/
 header .container{
     height: 100%;
 }
-
 header .navbar .row{
     height: 100%;
     align-items: center;
     justify-content: space-between;
-    
 }
-
-header nav ul{
-    display: flex;
-    list-style: none;
-
-}
-
-header nav ul a{
-    text-decoration: none;
+header .col:first-child{
+    border: 1px solid black;
     color: black;
     background-color: #daa51e;
     margin: 0 10px;
     padding: 5px 10px;
 }
-
-header .logo{
-    width: 80px;
+header .col:first-child:hover{
+    border: 1px solid black;
+    color: black;
+    background-color: #a28438;
+    margin: 0 10px;
+    padding: 5px 10px;
 }
-header .login{
-    width: 80px;
+header .col:last-child{
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    background-color: #daa51e;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+header .col:last-child:hover{
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    background-color: #a28438;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+header nav ul a{
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    background-color: #daa51e;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+header nav ul a:hover{
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    background-color: #a28438;
+    margin: 0 10px;
+    padding: 5px 10px;
 }
 
+/******* / HEADER  *******/
+
+
+/*******  MAIN  *******/
 #cta-0{
     padding: 50px 0 50px 0;
     background-color: #00018b;
@@ -95,18 +120,17 @@ header .login{
     border: 1px solid black;
 }
 #cta-1 .col{
+    width: 450px;
     border: 1px solid black;
-    min-height: 400px;
+    min-height: 500px;
 }
 #cta-1 .col:first-child{
-    width: 60%;
+    width: calc(100% - 450px);
     background-color: #1e90ff;
 }
 #cta-1 .col:last-child{
-    width: 40%;
     background-color: #ffc0ca;
 }
-
 
 
 #cta-2{
@@ -120,21 +144,18 @@ header .login{
     border: 1px solid black;
 }
 #cta-2 .col{
+    width: 450px;
     border: 1px solid black;
-    min-height: 400px;
+    min-height: 500px;
 }
 #cta-2 .col:first-child{
-    width: 40%;
     background-color: #ffc0ca;
 }
 #cta-2 .col:last-child{
-    width: 60%;
+    width: calc(100% - 450px);
     background-color: #1e90ff;
 
 }
-
-
-
 
 
 #cta-3{
@@ -148,18 +169,17 @@ header .login{
     border: 1px solid black;
 }
 #cta-3 .col{
+    width: 450px;
     border: 1px solid black;
-    min-height: 400px;
+    min-height: 500px;
 }
 #cta-3 .col:first-child{
-    width: 60%;
+    width: calc(100% - 450px);
     background-color: #1e90ff;
 }
 #cta-3 .col:last-child{
-    width: 40%;
     background-color: #ffc0ca;
 }
-
 
 
 #cta-4{
@@ -179,6 +199,7 @@ header .login{
     background-color: #218b21;
 }
 
+
 #cta-5{
     display: flex;
     justify-content: center;
@@ -190,26 +211,19 @@ header .login{
     border: 1px solid black;
 }
 #cta-5 .col{
+    width: 170px;
     border: 1px solid black;
+    background-color: #20b3aa;
     min-height: 550px;
-    width: 200px;
 }
-#cta-5 .primo{
-    width: calc(100%-800px);
+#cta-5 .col:first-child{
+    width: calc(100% - 680px);
     background-color: #f08180;
 }
-#cta-5 .col:nth-child(2){
-    background-color: #20b3aa;
-}
-#cta-5 .col:nth-child(3){
-    background-color: #20b3aa;
-}
-#cta-5 .col:nth-child(4){
-    background-color: #20b3aa;
-}
-#cta-5 .col:nth-child(5){
-    background-color: #20b3aa;
-}
+/******* / MAIN  *******/
+
+
+/*******  FOOTER  *******/
 footer{
     padding: 20px;
     height: 80px;
@@ -219,12 +233,7 @@ footer{
 }
  footer .container{
     height: 100%;
-
-
 }
-
-  
-
 footer .navbar .row{
     width: 100%;
     height: 150%;
@@ -233,7 +242,7 @@ footer .navbar .row{
     background-color: #7fffd4;
 }
 footer .col{
-    padding: 5px;
+    padding: 5px 10px;
     background-color: #fab9c1;
     border: 1px solid black;
 }
@@ -242,3 +251,4 @@ footer .col:hover{
     background-color: #c9999f;
     border: 1px solid black;
 }
+/******* / FOOTER  *******/
