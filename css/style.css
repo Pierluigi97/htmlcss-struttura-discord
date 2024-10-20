@@ -238,7 +238,7 @@ footer .col{
     border: 1px solid black;
 }
 footer .col:hover{
-    padding: 5px;
+    padding: 5px 10px;
     background-color: #c9999f;
     border: 1px solid black;
 }
